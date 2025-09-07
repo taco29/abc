@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.branch {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.branch:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.continent-card {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.continent-card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.tree-trunk {
+  background: linear-gradient(to bottom, #8B4513, #654321);
+}
+
+.leaves {
+  background: linear-gradient(135deg, #228B22, #32CD32, #90EE90);
+}
+
+@keyframes sparkleFloat {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-100px) scale(0.5); }
+}
